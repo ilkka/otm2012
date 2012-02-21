@@ -12,7 +12,25 @@
   </head>
 
   <body>
-    <h1>Hello world!</h1>
+    <div id="impress" class="impress-not-supported">
+      <div class="fallback-message">
+        <h1>Sorry :(</h1>
+        <p>Unfortunately the stuff that's powering this presentation does not work in your browser. Sorry about that. Try the newest version of Chrome, Safari or Firefox.</p>
+      </div>
+
+      <div class="step slide" data-x="0" data-y="0">
+        <canvas id="scrum-flow"></canvas>
+      </div>
+
+      <div class="step slide" data-x="100" data-y="100">
+        <p>moroo</p>
+      </div>
+    </div>
+    <script src="impress.js/js/impress.js"></script>
+    <script src="scrum.js"></script>
+    <script type="text/javascript">
+      Scrum.init("scrum-flow");
+    </script>
   </body>
 </html>
 
