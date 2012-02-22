@@ -49,8 +49,10 @@ Spinners = {
 			this.circleArrowShadow();
 
 			this.ctx.fillStyle = this.arrowColor;
-			this.ctx.fillText(this.text, this.x - 0.5 * this.metrics.width, this.y + 0.4 * this.thickness, 2 * this.radius - 2 * this.thickness);
-			this.ctx.strokeText(this.text, this.x - 0.5 * this.metrics.width, this.y + 0.4 * this.thickness, 2 * this.radius - 2 * this.thickness);
+			if (this.text !== undefined) {
+				this.ctx.fillText(this.text, this.x - 0.5 * this.metrics.width, this.y + 0.4 * this.thickness, 2 * this.radius - 2 * this.thickness);
+				this.ctx.strokeText(this.text, this.x - 0.5 * this.metrics.width, this.y + 0.4 * this.thickness, 2 * this.radius - 2 * this.thickness);
+			}
 			this.ctx.restore()
 		}
 
