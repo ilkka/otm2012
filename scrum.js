@@ -81,11 +81,42 @@ Scrum = {
 			Scrum.ctx.restore();
 		}
 
+		function drawDocument(title, x, y) {
+			Scrum.ctx.save();
+			Scrum.ctx.fillStyle = "#67E46F";
+			var side = Scrum.canvas.width * 0.15;
+			Scrum.ctx.font = side * 0.2 + "px";
+			function docPath(callback) {
+				Scrum.ctx.beginPath();
+				Scrum.ctx.moveTo(0.8 * side, 0);
+				Scrum.ctx.lineTo(side, 0.2 * side);
+				Scrum.ctx.lineTo(0.8 * side, 0.2 * side);
+				Scrum.ctx.lineTo(0.8 * side, 0);
+				Scrum.ctx.lineTo(0, 0);
+				Scrum.ctx.lineTo(0, side);
+				Scrum.ctx.lineTo(side, side);
+				Scrum.ctx.lineTo(side, 0.2 * side);
+				callback();
+			}
+			Scrum.ctx.shadowColor = Scrum.shadowColor;
+			Scrum.ctx.shadowOffsetX = 0.1 * side;
+			Scrum.ctx.shadowOffsetY = 0.1 * side;
+			Scrum.ctx.shadowBlur = 10;
+			Scrum.ctx.translate(x - side/2, y - side/2);
+			docPath(function() { Scrum.ctx.fill();});
+			Scrum.ctx.shadowColor = "rgba(0, 0, 0, 0)";
+			docPath(function() { Scrum.ctx.stroke();});
+			Scrum.ctx.fillStyle = "white";
+			Scrum.ctx.textAlign = "center";
+			Scrum.ctx.fillText(title, side/2, side/2, 0.9 * side);
+			Scrum.ctx.restore();
+		}
+
 		drawArrow(0.1 * this.canvas.width, this.canvas.height / 2 + 0.17 * this.canvas.width,
 		0.9 * this.canvas.width, this.canvas.height / 2 + 0.17 * this.canvas.width);
 		drawCycle("30 days", this.canvas.width / 2, this.canvas.height / 2, 0.17 * this.canvas.width, 0.01, false);
 		drawCycle("24 hours", this.canvas.width / 2 - 0.06 * this.canvas.width, this.canvas.height / 2 - 0.22 * this.canvas.width, 0.1 * this.canvas.width, 0.3, true);
-
+		drawDocument("Product\nBacklog", 0.2 * this.canvas.width, this.canvas.height / 2 + 0.17 * this.canvas.width);
 		this.tick += 50;
 	},
 }
