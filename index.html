@@ -7,6 +7,7 @@
     <meta name="author" content="Ilkka Laukkanen"/>
 
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Princess+Sofia' rel='stylesheet' type='text/css'>
 
     <link href="css/style.css" rel="stylesheet"/>
   </head>
@@ -18,18 +19,169 @@
         <p>Unfortunately the stuff that's powering this presentation does not work in your browser. Sorry about that. Try the newest version of Chrome, Safari or Firefox.</p>
       </div>
 
-      <div class="step slide" data-x="0" data-y="0">
-        <canvas id="scrum-flow"></canvas>
+      <div id="first" class="step titlestep" data-x="-5000">
+        <p>Scrum</p>
       </div>
 
-      <div class="step slide" data-x="100" data-y="100">
-        <p>moroo</p>
+      <div class="step titlestep" data-x="-5000" data-y="100">
+        <p>prototyyppiprojektissa</p>
       </div>
+
+      <div id="about-me-1" class="step" data-x="-5000" data-y="1000">
+        <p>Ilkka Laukkanen, Futurice
+        <img id="futulogo" src="futulogo.png"/>
+        <img id="gptwlogo" src="gptwlogo.png"/>
+        </p>
+      </div>
+
+      <div class="step" data-x="-4500" data-y="2000" data-rotate="-36">
+        <img src="kotipizza.png"/>
+      </div>
+
+      <div class="step" data-x="-4000" data-y="2370" data-rotate="-72">
+        <img src="wrc.jpg"/>
+      </div>
+
+      <div class="step" data-x="-3380" data-y="2380" data-rotate="-108">
+        <img src="kesko.png"/>
+      </div>
+
+      <div class="step" data-x="-2900" data-y="2000" data-rotate="-144">
+        <img src="kiinteistomaailma.png"/>
+      </div>
+
+      <div class="step" data-x="-2700" data-y="1400" data-rotate="-180">
+        <img src="vodafone.png"/>
+      </div>
+
+      <div class="step" data-x="-2700" data-y="600" data-rotate="-180">
+        <p>Lähtökohdat:</p>
+      </div>
+
+      <div class="step" data-x="-2700" data-y="400" data-rotate="-180">
+        <p>Uudenlaisten mobiili-UI-konseptien suunnittelu ja prototypointi</p>
+      </div>
+
+      <div class="step" data-x="-2700" data-y="200" data-rotate="-180">
+        <p>Tiimi 2 graafista suunnittelijaa ja 2 koodaria</p>
+      </div>
+
+      <div class="step" data-x="-2700" data-y="-400" data-rotate="-180">
+        <p>Suullinen synkkaus</p>
+      </div>
+
+      <div class="step" data-x="-2700" data-y="-1000" data-rotate="-180">
+        <p>Viikkopalaverit asiakkaan kanssa</p>
+        <p>Demot ja konseptien iterointi</p>
+      </div>
+
+      <div id="scrumbut" class="step" data-x="-2500" data-y="-2500" data-rotate="-90" data-scale="2">
+        <p>Scrum<span class="but">-but</span></p>
+        <p>Product Backlog <span class="but">puuttuu</span></p>
+        <p>Estimointi <span class="but">puuttuu</span></p>
+        <p>Ennustettavuus <span class="but">puuttuu</span></p>
+      </div>
+
+      <div class="step" data-x="-3500" data-y="-2500" data-rotate="-90">
+        <p>Mitä me oltiinkaan tekemässä?</p>
+      </div>
+
+      <div class="step" data-x="-3500" data-y="-4500" data-rotate="-90">
+        <p>Saavuttamisen ilmapiiri?</p>
+      </div>
+
+      <div id="projekti-kasvaa" class="step" data-x="-2000" data-y="-4500">
+        <p>Projekti <span id="grow">kasvaa</span><br>&amp;<br><em>varttuu</em></p>
+      </div>
+
+      <div class="step" data-x="-500" data-y="-4500">
+        <p>Tiedonjako</p>
+      </div>
+
+      <div class="step" data-x="1000" data-y="-4500">
+        <p>Ownership<sup>*</sup></p>
+      </div>
+
+      <div class="step" data-x="1000" data-y="-4450" data-scale="0.15">
+        <p>* "Single Wrenchable Neck" &ndash;J. Coplien</p>
+      </div>
+
+      <div class="step" data-x="2500" data-y="-4500">
+        <p>Waste</p>
+      </div>
+
+      <div class="step" data-x="4000" data-y="-4500">
+        <p>Tieto piilossa</p>
+      </div>
+
+      <div id="scrum-overview" class="step" data-x="6000" data-scale="10">
+        <!-- this is just an empty step to show all .scrum steps -->
+      </div>
+
+      <div class="step scrum" id="sprint" data-x="4000" data-y="0" data-scale="6">
+        <canvas width="800" height="500" id="sprintcycle"></canvas>
+      </div>
+
+      <div class="step picture" id="poker" data-x="7000" data-y="0" data-scale="6">
+        <img src="poker.jpg"/>
+      </div>
+
+      <div class="step picture" id="burndown" data-x="7000" data-y="0" data-scale="6">
+        <img src="burndown.png"/>
+      </div>
+
+      <div class="step scrum" id="day" data-x="3200" data-y="-1500" data-scale="4">
+        <canvas width="800" height="500" id="daycycle"></canvas>
+      </div>
+
+      <div class="step picture" id="taskboard" data-x="4800" data-y="-1500" data-scale="4">
+        <img src="taskboard.jpg"/>
+      </div>
+
+      <div class="step" id="scrum-of-scrums" data-x="6600" data-y="3400" data-scale="18">
+        <canvas width="800" height="500" id="scrumofscrumscycle"></canvas>
+      </diV>
+
+      <div class="step pitfall" data-x="6600" data-y="15000" data-scale="18">
+        <p>Sudenkuopat:</p>
+      </div>
+      <div class="step pitfall" data-x="6600" data-y="15000" data-scale="18">
+        <p>Splittaus</p>
+      </div>
+      <div class="step pitfall" data-x="6600" data-y="15000" data-scale="18">
+        <p>Liian isojen palojen arviointi</p>
+      </div>
+      <div class="step pitfall" data-x="6600" data-y="15000" data-scale="18">
+        <p>Arviointi tunteina tmv</p>
+      </div>
+      <div class="step pitfall" data-x="6600" data-y="15000" data-scale="18">
+        <p>Järjestelmät joita kukaan ei päivitä</p>
+      </div>
+      <div class="step pitfall" data-x="6600" data-y="15000" data-scale="18">
+        <p>Palaverien kesto</p>
+      </div>
+      <div class="step pitfall" data-x="6600" data-y="15000" data-scale="18">
+        <p>Hukkuvat ideat</p>
+      </div>
+
+      <div class="step" id="final" data-x="-5000" data-scale="25">
+        <p class="huge">Q &amp; A</p>
+        <p>Planning poker -kuva &copy; Alan Dayley http://flickr.com/alandd</p>
+        <p>Kanban board -kuva &copy; Drew Stephens http://flickr.com/dinomite</p>
+        <p>Käytetty CC-lisenssin alla</p>
+      </div>
+
     </div>
     <script src="impress.js/js/impress.js"></script>
-    <script src="scrum.js"></script>
+    <script src="spinner.js">
+    </script>
     <script type="text/javascript">
-      Scrum.init("scrum-flow");
+      var sprint_spinner = new Spinners.Spinner("sprintcycle", "2 vko", 0.02);
+      setInterval("sprint_spinner.draw()", 50);
+      var day_spinner = new Spinners.Spinner("daycycle", "24 h", 0.3);
+      setInterval("day_spinner.draw()", 50);
+      var sos_spinner = new Spinners.Spinner("scrumofscrumscycle", "1 kk", 0.01);
+      setInterval("sos_spinner.draw()", 50);
     </script>
   </body>
 </html>

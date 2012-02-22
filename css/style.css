@@ -63,6 +63,7 @@ body {
 b,strong { font-weight: bold; }
 i,em { font-style: italic; }
 
+big { font-size: 150%; }
 
 /* style for steps */
 .step {
@@ -89,6 +90,222 @@ i,em { font-style: italic; }
 }
 .step:not(.active) {
 	opacity: 0.3;
+}
+
+.step p {
+	text-align: center;
+}
+
+/* per-slide styles */
+.titlestep {
+	text-align: center
+}
+
+#about-me-1 #futulogo {
+	display: inline-block;
+	position: relative;
+	top: 20px;
+	left: 1100px;
+	opacity: 0.0;
+}
+
+#about-me-1 #gptwlogo {
+	display: inline-block;
+	position: relative;
+	top: 2000px;
+	left: 80px;
+	opacity: 0.0;
+}
+
+#about-me-1 img {
+	-webkit-transition: 1.0s;
+	-moz-transition:    1.0s;
+	-ms-transition:     1.0s;
+	-o-transition:      1.0s;
+	transition:         1.0s;
+}
+
+#about-me-1.active #futulogo {
+	-webkit-transition-delay: 1.5s;
+	-moz-transition-delay:    1.5s;
+	-ms-transition-delay:     1.5s;
+	-o-transition-delay:      1.5s;
+	transition-delay:         1.5s;
+
+	-webkit-transform: translateX(-1050px);
+	-moz-transform:    translateX(-1050px);
+	-ms-transform:     translateX(-1050px);
+	-o-transform:      translateX(-1050px);
+	transform:         translateX(-1050px);
+	
+	opacity: 1.0;
+}
+
+#about-me-1.active #gptwlogo {
+	-webkit-transition-delay: 3.5s;
+	-moz-transition-delay:    3.5s;
+	-ms-transition-delay:     3.5s;
+	-o-transition-delay:      3.5s;
+	transition-delay:         3.5s;
+
+	-webkit-transform: translateY(-1975px);
+	-moz-transform:    translateY(-1975px);
+	-ms-transform:     translateY(-1975px);
+	-o-transform:      translateY(-1975px);
+	transform:         translateY(-1975px);
+
+	opacity: 1.0;
+}
+
+#scrumbut .but {
+	display: inline-block;
+	position: relative;
+	left: 2000px;
+
+	color: #f02010;
+
+	-webkit-transition: 1.5s;
+	-moz-transition:    1.5s;
+	-ms-transition:     1.5s;
+	-o-transition:      1.5s;
+	transition:         1.5s;
+}
+
+#scrumbut.active .but {
+	-webkit-transition-delay: 2.0s;
+	-moz-transition-delay:    2.0s;
+	-ms-transition-delay:     2.0s;
+	-o-transition-delay:      2.0s;
+	transition-delay:         2.0s;
+
+	-webkit-transform: translateX(-2000px);
+	-moz-transform:    translateX(-2000px);
+	-ms-transform:     translateX(-2000px);
+	-o-transform:      translateX(-2000px);
+	transform:         translateX(-2000px);
+}
+
+#projekti-kasvaa #grow {
+	display: inline-block;
+	-webkit-transition: 5.0s;
+	-moz-transition:    5.0s;
+	-ms-transition:     5.0s;
+	-o-transition:      5.0s;
+	transition:         5.0s;
+}
+
+#projekti-kasvaa.active #grow {
+	-webkit-transition-delay: 1.0s;
+	-moz-transition-delay:    1.0s;
+	-ms-transition-delay:     1.0s;
+	-o-transition-delay:      1.0s;
+	transition-delay:         1.0s;
+
+	-webkit-transform: scale(2.0) translateX(40px);
+	-moz-transform:    scale(2.0) translateX(40px);
+	-ms-transform:     scale(2.0) translateX(40px);
+	-o-transform:      scale(2.0) translateX(40px);
+	transform:         scale(2.0) translateX(40px);
+}
+
+#scrum-of-scrums {
+	z-index: -100
+}
+
+#burndown {
+	opacity: 0.0;
+}
+
+#burndown img {
+	position: relative;
+	left: 240px;
+	top: 40px;
+}
+
+#burndown.active {
+	opacity: 1.0;
+}
+
+#impress.step-burndown #sprint,
+#impress.step-burndown #poker {
+	opacity: 1.0;
+}
+
+#poker {
+	opacity: 0.0;
+}
+
+#poker img {
+	position: relative;
+	left: 200px;
+}
+
+#poker.active {
+	opacity: 1.0;
+}
+
+#impress.step-poker #sprint {
+	opacity: 1.0;
+}
+
+#taskboard {
+	opacity: 0.0;
+}
+
+#taskboard img {
+	position: relative;
+	left: 350px;
+}
+
+#taskboard.active {
+	opacity: 1.0;
+}
+
+#impress.step-taskboard #day {
+	opacity: 1.0;
+}
+
+.pitfall:not(.active) {
+	opacity: 0.0;
+}
+
+#final p {
+	text-align: left;
+	position: relative;
+	left: -100px;
+}
+
+#final p.huge {
+	font-size: 300%;
+	font-family: 'Princess Sofia', cursive;
+}
+
+#final p:not(.huge) {
+	font-size: 30%;
+}
+
+#final:not(.active) {
+	opacity: 0.0;
+}
+
+#impress.step-final .step {
+	opacity: 1.0;
+}
+
+#impress.step-final .pitfall, #impress.step-final .picture {
+	opacity: 0.0;
+}
+
+/* when scrum overview step is shown, show scrum-related steps
+ * this is possible because the impress element gets a class
+ * that corresponds with the id of the selected step
+ */
+#impress.step-scrum-overview .scrum {
+	opacity: 1.0;
+}
+
+#impress.step-first .titlestep {
+	opacity: 1.0;
 }
 
 
