@@ -1,10 +1,10 @@
 Spinners = {
-	Spinner: function(canvas_id, text) {
+	Spinner: function(canvas_id, text, speed) {
 		this.canvas = document.getElementById(canvas_id);
 		this.ctx = this.canvas.getContext("2d");
 		this.text = text;
 		this.tick = 0;
-		this.speed = 0.01;
+		this.speed = speed;
 
 		this.backgroundColor = "rgba(0, 0, 0, 0)"; //"#01939A"
 		this.shadowColor = "rgba(0, 0, 0, 0.6)";
