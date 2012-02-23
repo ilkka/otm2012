@@ -304,8 +304,30 @@ big { font-size: 150%; }
 	opacity: 1.0;
 }
 
-#impress.step-first .titlestep {
+#protopro {
+	-webkit-transition: 1.0s;
+	-moz-transition:    1.0s;
+	-ms-transition:     1.0s;
+	-o-transition:      1.0s;
+	transition:         1.0s;
+}
+
+#impress.step-overview #first {
 	opacity: 1.0;
+}
+
+#impress.step-overview #protopro {
+	-webkit-transition-delay: 1.5s;
+	-moz-transition-delay:    1.5s;
+	-ms-transition-delay:     1.5s;
+	-o-transition-delay:      1.5s;
+	transition-delay:         1.5s;
+
+	-webkit-transform: translateX(2100px) translateY(650px) rotate(-140deg) scale(0.75);
+	-moz-transform:    translateX(2100px) translateY(650px) rotate(-140deg) scale(0.75);
+	-ms-transform:     translateX(2100px) translateY(650px) rotate(-140deg) scale(0.75);
+	-o-transform:      translateX(2100px) translateY(650px) rotate(-140deg) scale(0.75);
+	transform:         translateX(2100px) translateY(650px) rotate(-140deg) scale(0.75);
 }
 
 
