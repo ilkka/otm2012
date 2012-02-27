@@ -9,4 +9,3 @@ git checkout impressjs/master -- js/impress.js
 git add $FILES js/impress.js
 git commit -v
 git push
-git checkout master
