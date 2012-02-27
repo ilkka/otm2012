@@ -1,185 +1,92 @@
-<html lang="en">
-  <head>
-    <meta charset="utf-8"/>
-    <title>OTM 2012: Scrum Prototyyppiprojektissa</title>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
 
-    <meta name="description" content="Vierailuluento Tampereen Teknillisen Yliopiston kurssille Ohjelmistotuotannon menetelmät, kevät 2012. Käsittelee Scrumin käyttöä prototyyppiprojektissa."/>
-    <meta name="author" content="Ilkka Laukkanen"/>
+  <title>ilkka/otm2012 @ GitHub</title>
 
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Princess+Sofia' rel='stylesheet' type='text/css'>
+  <style type="text/css">
+    body {
+      margin-top: 1.0em;
+      background-color: #efefef;
+      font-family: Helvetica, Arial, FreeSans, san-serif;
+      color: #000000;
+    }
+    #container {
+      margin: 0 auto;
+      width: 700px;
+    }
+    h1 { font-size: 3.8em; color: #46a53e; margin-bottom: 3px; }
+    h1 .small { font-size: 0.4em; }
+    h1 a { text-decoration: none }
+    h2 { font-size: 1.5em; color: #46a53e; }
+    h3 { text-align: center; color: #46a53e; }
+    a { color: #46a53e; }
+    .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
+    .download { float: right; }
+    pre { background: #000; color: #fff; padding: 15px;}
+    hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
+    .footer { text-align:center; padding-top:30px; font-style: italic; }
+  </style>
+</head>
 
-    <link href="css/style.css" rel="stylesheet"/>
-  </head>
+<body>
+  <a href="https://github.com/ilkka/otm2012"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
 
-  <body>
-    <div id="impress" class="impress-not-supported">
-      <div class="fallback-message">
-        <h1>Sorry :(</h1>
-        <p>Unfortunately the stuff that's powering this presentation does not work in your browser. Sorry about that. Try the newest version of Chrome, Safari or Firefox.</p>
-      </div>
+  <div id="container">
 
-      <div id="first" class="step titlestep" data-x="-5000">
-        <p>Scrum</p>
-        <p id="protopro">prototyyppiprojektissa</p>
-      </div>
-
-      <div id="about-me-1" class="step" data-x="-5000" data-y="1000">
-        <p>Ilkka Laukkanen, Futurice
-        <img id="futulogo" src="futulogo.png"/>
-        <img id="gptwlogo" src="gptwlogo.png"/>
-        </p>
-      </div>
-
-      <div class="step" data-x="-4500" data-y="2000" data-rotate="-36">
-        <img src="kotipizza.png"/>
-      </div>
-
-      <div class="step" data-x="-4000" data-y="2370" data-rotate="-72">
-        <img src="wrc.jpg"/>
-      </div>
-
-      <div class="step" data-x="-3380" data-y="2380" data-rotate="-108">
-        <img src="kesko.png"/>
-      </div>
-
-      <div class="step" data-x="-2900" data-y="2000" data-rotate="-144">
-        <img src="kiinteistomaailma.png"/>
-      </div>
-
-      <div class="step" data-x="-2700" data-y="1400" data-rotate="-180">
-        <img src="vodafone.png"/>
-      </div>
-
-      <div id="overview" class="step" data-x="-2700" data-y="600" data-rotate="-180">
-        <p>Lähtökohdat:</p>
-      </div>
-
-      <div class="step" data-x="-2700" data-y="400" data-rotate="-180">
-        <p>Uudenlaisten mobiili-UI-konseptien suunnittelu ja prototypointi</p>
-      </div>
-
-      <div class="step" data-x="-2700" data-y="200" data-rotate="-180">
-        <p>Tiimi 2 graafista suunnittelijaa ja 2 koodaria</p>
-      </div>
-
-      <div class="step" data-x="-2700" data-y="-400" data-rotate="-180">
-        <p>Suullinen synkkaus</p>
-      </div>
-
-      <div class="step" data-x="-2700" data-y="-1000" data-rotate="-180">
-        <p>Viikkopalaverit asiakkaan kanssa</p>
-        <p>Demot ja konseptien iterointi</p>
-      </div>
-
-      <div id="scrumbut" class="step" data-x="-2500" data-y="-2500" data-rotate="-90" data-scale="2">
-        <p>Scrum<span class="but">-but</span></p>
-        <p>Product Backlog <span class="but">puuttuu</span></p>
-        <p>Estimointi <span class="but">puuttuu</span></p>
-        <p>Ennustettavuus <span class="but">puuttuu</span></p>
-      </div>
-
-      <div class="step" data-x="-3500" data-y="-2500" data-rotate="-90">
-        <p>Mitä me oltiinkaan tekemässä?</p>
-      </div>
-
-      <div class="step" data-x="-3500" data-y="-4500" data-rotate="-90">
-        <p>Saavuttamisen ilmapiiri?</p>
-      </div>
-
-      <div id="projekti-kasvaa" class="step" data-x="-2000" data-y="-4500">
-        <p>Projekti <span id="grow">kasvaa</span><br>&amp;<br><em>varttuu</em></p>
-      </div>
-
-      <div class="step" data-x="-500" data-y="-4500">
-        <p>Tiedonjako</p>
-      </div>
-
-      <div class="step" data-x="1000" data-y="-4500">
-        <p>Ownership<sup>*</sup></p>
-      </div>
-
-      <div class="step" data-x="1000" data-y="-4450" data-scale="0.15">
-        <p>* "Single Wrenchable Neck" &ndash;J. Coplien</p>
-      </div>
-
-      <div class="step" data-x="2500" data-y="-4500">
-        <p>Waste</p>
-      </div>
-
-      <div class="step" data-x="4000" data-y="-4500">
-        <p>Tieto piilossa</p>
-      </div>
-
-      <div id="scrum-overview" class="step" data-x="6000" data-scale="10">
-        <!-- this is just an empty step to show all .scrum steps -->
-      </div>
-
-      <div class="step scrum" id="sprint" data-x="4000" data-y="0" data-scale="6">
-        <canvas width="800" height="500" id="sprintcycle"></canvas>
-      </div>
-
-      <div class="step picture" id="poker" data-x="7000" data-y="0" data-scale="6">
-        <img src="poker.jpg"/>
-      </div>
-
-      <div class="step picture" id="burndown" data-x="7000" data-y="0" data-scale="6">
-        <img src="burndown.png"/>
-      </div>
-
-      <div class="step scrum" id="day" data-x="3200" data-y="-1500" data-scale="4">
-        <canvas width="800" height="500" id="daycycle"></canvas>
-      </div>
-
-      <div class="step picture" id="taskboard" data-x="4800" data-y="-1500" data-scale="4">
-        <img src="taskboard.jpg"/>
-      </div>
-
-      <div class="step" id="scrum-of-scrums" data-x="6600" data-y="3400" data-scale="18">
-        <canvas width="800" height="500" id="scrumofscrumscycle"></canvas>
-      </diV>
-
-      <div class="step pitfall" data-x="6600" data-y="15000" data-scale="18">
-        <p>Sudenkuopat:</p>
-      </div>
-      <div class="step pitfall" data-x="6600" data-y="15000" data-scale="18">
-        <p>Splittaus</p>
-      </div>
-      <div class="step pitfall" data-x="6600" data-y="15000" data-scale="18">
-        <p>Liian isojen palojen arviointi</p>
-      </div>
-      <div class="step pitfall" data-x="6600" data-y="15000" data-scale="18">
-        <p>Arviointi tunteina tmv</p>
-      </div>
-      <div class="step pitfall" data-x="6600" data-y="15000" data-scale="18">
-        <p>Järjestelmät joita kukaan ei päivitä</p>
-      </div>
-      <div class="step pitfall" data-x="6600" data-y="15000" data-scale="18">
-        <p>Palaverien kesto</p>
-      </div>
-      <div class="step pitfall" data-x="6600" data-y="15000" data-scale="18">
-        <p>Hukkuvat ideat</p>
-      </div>
-
-      <div class="step" id="final" data-x="-5000" data-scale="25">
-        <p class="huge">Q &amp; A</p>
-        <p>Planning poker -kuva &copy; Alan Dayley http://flickr.com/alandd</p>
-        <p>Kanban board -kuva &copy; Drew Stephens http://flickr.com/dinomite</p>
-        <p>Käytetty CC-lisenssin alla</p>
-      </div>
-
+    <div class="download">
+      <a href="https://github.com/ilkka/otm2012/zipball/master">
+        <img border="0" width="90" src="https://github.com/images/modules/download/zip.png"></a>
+      <a href="https://github.com/ilkka/otm2012/tarball/master">
+        <img border="0" width="90" src="https://github.com/images/modules/download/tar.png"></a>
     </div>
-    <script src="js/impress.js"></script>
-    <script src="spinner.js">
-    </script>
-    <script type="text/javascript">
-      var sprint_spinner = new Spinners.Spinner("sprintcycle", "2 vko", 0.02);
-      setInterval("sprint_spinner.draw()", 50);
-      var day_spinner = new Spinners.Spinner("daycycle", "24 h", 0.3);
-      setInterval("day_spinner.draw()", 50);
-      var sos_spinner = new Spinners.Spinner("scrumofscrumscycle", "1 kk", 0.01);
-      setInterval("sos_spinner.draw()", 50);
-    </script>
-  </body>
-</html>
 
+    <h1><a href="https://github.com/ilkka/otm2012">otm2012</a>
+      <span class="small">by <a href="https://github.com/ilkka">ilkka</a></span></h1>
+
+    <div class="description">
+      <h2>OTM 2012 vierailuluennot</h2>
+
+      <ol>
+        <li><a href="prototypescrum.html">Scrum prototyyppiprojektissa</a></li>
+      </ol>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+      <h2>Authors</h2>
+      <p>Ilkka Laukkanen (ilkka.s.laukkanen@gmail.com)<br/>      </p>
+    
+
+    
+      <h2>Contact</h2>
+      <p>Ilkka Laukkanen (ilkka.s.laukkanen@gmail.com)<br/>      </p>
+    
+
+    <h2>Download</h2>
+    <p>
+      You can download this project in either
+      <a href="https://github.com/ilkka/otm2012/zipball/master">zip</a> or
+      <a href="https://github.com/ilkka/otm2012/tarball/master">tar formats.
+    </p>
+    <p>You can also clone the project with <a href="http://git-scm.com">Git</a>
+      by running:
+      <pre>$ git clone git://github.com/ilkka/otm2012</pre>
+    </p>
+
+    <div class="footer">
+      get the source code on GitHub : <a href="https://github.com/ilkka/otm2012">ilkka/otm2012</a>
+    </div>
+
+  </div>
+
+</body>
+</html>
