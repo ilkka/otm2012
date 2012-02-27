@@ -9,3 +9,4 @@ git checkout impressjs/master -- js/impress.js
 git add $FILES js/impress.js
 git commit -v
 git push
+echo "REMEMBER TO SWITCH BACK TO MASTER"
